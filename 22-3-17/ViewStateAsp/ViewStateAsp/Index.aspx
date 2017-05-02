@@ -1,0 +1,29 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="ViewStateAsp.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Name: </h1>
+        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        <h1>Reg.No</h1>
+        <asp:TextBox ID="txtRegi" runat="server"></asp:TextBox>
+        <h1>Email: </h1>
+        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+        <asp:Button ID="btnShow" runat="server" Text="Show" OnClick="btnShow_Click" />
+    </div>
+        <hr/>
+        <asp:Label ID="nameLabel" runat="server" Text="Label"></asp:Label>
+        <hr/>
+        <asp:Label ID="regiLabel" runat="server" Text="Label"></asp:Label>
+        <hr/>
+        <asp:Label ID="emailLabel" runat="server" Text="Label"></asp:Label>
+    </form>
+</body>
+</html>

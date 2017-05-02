@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name" id="name"/>
+        <input type="submit" name="btn" id="btn" value="Save"/>
+    </form>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myForm").submit(function() {
+                var name = $("#name").val();
+                alert(name);
+            });
+        });
+    </script>
+</body>
+</html>

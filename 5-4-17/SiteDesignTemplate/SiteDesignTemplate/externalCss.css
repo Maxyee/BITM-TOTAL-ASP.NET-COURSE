@@ -1,0 +1,95 @@
+﻿.container {
+            width: 960px;
+            height: 200px;
+            background-color: gainsboro;
+            margin: 0 auto;
+           
+        }
+        .main-header {
+            min-height: 70px;
+            width: 960px;
+            background-color: antiquewhite;
+            float: left;
+        }
+        .logo {
+            height: 70px;
+            width: 200px;
+            float: left;
+        }
+            .logo img {
+                height: 70px;
+                width: 200px;
+            }
+            .banner {
+                height: 50px;
+                width: 760px;
+                float: left;
+                padding-top: 20px;
+            }
+        .nav-horizontal {
+            width: 960px;
+            float: left;
+        }
+        .nav-horizontal ul {
+            
+        }
+            .nav-horizontal ul li {
+                display: inline;
+            }
+            .nav-horizontal ul li a {
+                text-decoration: none;
+                width: 240px;
+                height: 50px;
+                background-color: aqua;
+                display: inline-block;
+                float: left;
+                text-align: center;
+                font-family: arial;
+            }
+            .nav-horizontal ul li a:hover {
+                background-color: black;
+            }
+
+        .content-area {
+            width: 960px;
+            min-height: 700px;
+            background-color: azure;
+            float: left;
+        }
+        aside {
+            width: 200px;
+            min-height: 700px;
+            
+            float: left; 
+
+        }
+        .main-content {
+            width: 760px;
+            float: left;
+        }
+        .nav-vertical {
+            width: 200px;
+            padding-left: 50px;
+        }
+            .nav-vertical ul li {
+                padding-top: 10px;
+            }
+            .nav-vertical ul li a {
+                text-decoration: none;
+            }
+        
+        article {
+            padding: 5px;
+        }
+
+        article h1 {
+            text-align: center;
+        }
+
+        footer {
+            min-height: 50px;
+            width: 960px;
+            background-color: green;
+            clear: both;
+            text-align: center;
+        }

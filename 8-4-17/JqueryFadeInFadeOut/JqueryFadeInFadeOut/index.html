@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="box1" style="height:200px; width: 200px; background-color: red; display: none" >
+        
+    </div>
+    <div id="box2" style="height:200px; width: 200px; background-color: yellow;">
+    
+    </div>
+    <input value="click" name="name" id="btn" type="submit"/>
+    <input value="click2" name="name" id="btn2" type="submit" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("box1").fadeIn(3000);
+            });
+        });
+    </script>
+</body>
+</html>
