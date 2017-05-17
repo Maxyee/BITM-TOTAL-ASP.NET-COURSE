@@ -1,0 +1,52 @@
+﻿@model InsertDataUsingCsharpHtmlHeader.Models.Employee
+
+@{
+    ViewBag.Title = "Save";
+}
+
+<h2>Save</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.LabelFor(m=>m.Name)</td>
+            <td>
+                @Html.TextBox("Name")
+                @Html.ValidationMessageFor(m=>m.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m=>m.Email)</td>
+            <td>
+                @Html.TextBox("Email")
+                @Html.ValidationMessageFor(m=>m.Email)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Gender")</td>
+            <td>
+                @Html.RadioButton("Gender", "Male", true) Male @Html.RadioButton("Gender", "Female") Female
+                @Html.ValidationMessageFor(m=>m.Gender)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Department")</td>
+            <td>
+                @Html.DropDownList("Department", new SelectList(ViewBag.Departments, "Code", "Name"))
+                @Html.ValidationMessageFor(m=>m.Department)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Address")</td>
+            <td>
+                @Html.TextArea("Address")
+                @Html.ValidationMessageFor(m=>m.Address)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+}

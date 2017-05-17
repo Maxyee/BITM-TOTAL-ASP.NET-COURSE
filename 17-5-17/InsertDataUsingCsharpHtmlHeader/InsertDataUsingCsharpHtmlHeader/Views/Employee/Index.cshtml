@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.Label("Name")</td>
+            <td>@Html.TextBox("Name")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Email")</td>
+            <td>@Html.TextBox("Email")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Gender")</td>
+            <td>@Html.RadioButton("Gender","Male",true) Male @Html.RadioButton("Gender", "Female") Female</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Department")</td>
+            <td>@Html.DropDownList("Department", new SelectList(ViewBag.Departments, "Code", "Name"))</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Address")</td>
+            <td>@Html.TextArea("Address")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+}
